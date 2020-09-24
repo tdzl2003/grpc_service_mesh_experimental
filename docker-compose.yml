@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  back:
+    build:
+      context: .
+      dockerfile: ./back/Dockerfile
+    command: "node src"
+  gate:
+    build:
+      context: .
+      dockerfile: ./gate/Dockerfile
+    command: "node src"
+    ports:
+      - "8080:8080"

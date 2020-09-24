@@ -11,7 +11,7 @@ const packageDefinition = protoLoader.loadSync(PROTO_PATH, {
 const protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
 
 const grpcClient = new protoDescriptor.BackService(
-  "localhost:50051",
+  "back:50051",
   grpc.credentials.createInsecure()
 );
 
@@ -32,3 +32,5 @@ app.use(async (ctx) => {
 });
 
 app.listen(8080);
+
+console.log("Ready.");
