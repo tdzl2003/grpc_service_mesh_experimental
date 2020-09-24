@@ -1,0 +1,23 @@
+{
+  "name": "grpc_service_mesh_experimental",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdzl2003/grpc_service_mesh_experimental.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tdzl2003/grpc_service_mesh_experimental/issues"
+  },
+  "homepage": "https://github.com/tdzl2003/grpc_service_mesh_experimental#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.1.7",
+    "@grpc/proto-loader": "^0.5.5"
+  }
+}
